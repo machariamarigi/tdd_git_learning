@@ -12,4 +12,10 @@ class Calculator(object):
         """Method that performs the adding arithmetic operation of 2 numbers
             passed in the th argument
         """
-        return val1 + val2
+
+        number_types = (int, float, complex)
+
+        if isinstance(val1, number_types) and isinstance(val2, number_types):
+            return val1 + val2
+        else:
+            raise ValueError
