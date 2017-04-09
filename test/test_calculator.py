@@ -3,6 +3,7 @@
 """
 
 import unittest
+from app.calculator import Calculator
 
 
 class TestCalculator(unittest.TestCase):
@@ -12,7 +13,7 @@ class TestCalculator(unittest.TestCase):
 
     def setUp(self):
         """Function sets up hooks up our calculator to variable calc"""
-        self.calc = Caluculator()
+        self.calc = Calculator()
 
     def test_calculator_add_works(self):
         """Funtion test if our function works"""
