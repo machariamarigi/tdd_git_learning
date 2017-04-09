@@ -3,4 +3,6 @@ language: python
 python: 
   - "3.5"
 
-script: nosetest test/test_calculator.py
+install: "pip install nose"
+
+script: nosetest
