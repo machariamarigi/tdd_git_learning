@@ -5,4 +5,4 @@ python:
 
 install: "pip install nose"
 
-script: nosetest test/test_calculator/py
+script: nosetests test/test_calculator/py
